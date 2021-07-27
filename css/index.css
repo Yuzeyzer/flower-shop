@@ -28,7 +28,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  padding-top: 4.25vw;
+  padding-top: 6.64062vh;
 }
 
 .header__row {
@@ -50,7 +50,7 @@
 }
 
 .burger span::before, .burger span::after {
-  content: '';
+  content: "";
   position: absolute;
   transform: translateY(-0.3125vw);
   width: 100%;
@@ -128,6 +128,45 @@
   margin-left: 12.1875vw;
   text-decoration: none;
   color: #ffffff;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-top: 2.66667vmin;
+  }
+  .header__row {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .header .nav,
+  .header .call {
+    display: none;
+  }
+  .header .burger span {
+    width: 4.8vmin;
+    height: 0.53333vmin;
+    min-width: 18px;
+    min-height: 2px;
+    border-radius: 0.8vmin;
+  }
+  .header .burger span::before, .header .burger span::after {
+    transform: translateY(-1.33333vmin);
+  }
+  .header .burger span::after {
+    transform: translateY(1.33333vmin);
+  }
+  .header .logo {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.33333vmin;
+    line-height: 8vmin;
+    margin-right: 0;
+  }
+  .header .search {
+    display: none;
+  }
 }
 
 .hero {
@@ -241,6 +280,69 @@
   box-shadow: 0px 0.97656vh 2.92969vh rgba(54, 61, 77, 0.25);
   border-radius: 2.92969vh;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__content {
+    padding-top: 29.33333vmin;
+    max-width: 100%;
+  }
+  .hero__anchor {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.73333vmin;
+    line-height: 8vmin;
+    padding: 4vmin 8vmin;
+    box-shadow: 0px 2.66667vmin 8vmin rgba(54, 61, 77, 0.25);
+    border-radius: 8vmin;
+  }
+  .hero__link {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.66667vmin;
+    line-height: 1.5;
+    border-radius: 8vmin;
+    padding: 1.33333vmin 4.26667vmin;
+  }
+  .hero__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.2vmin;
+    line-height: 1.5;
+    margin: 10.66667vmin 0 10.66667vmin;
+  }
+  .hero-list {
+    margin-bottom: 13.33333vmin;
+  }
+  .hero-list__item {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2vmin;
+    line-height: 6.93333vmin;
+    margin-right: 4vmin;
+  }
+  .hero-list__item::after {
+    right: -2.93333vmin;
+  }
+  .hero-info {
+    flex-direction: column;
+  }
+  .hero-info__item {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.46667vmin;
+    line-height: 6.66667vmin;
+    margin-bottom: 5.33333vmin;
+  }
+  .hero-info__item img {
+    margin-right: 5.33333vmin;
+    width: 4.53333vmin;
+  }
 }
 
 .about {
@@ -864,4 +966,14 @@ img {
 hr {
   margin: 0;
   border-color: #EDEFF2;
+}
+
+@media screen and (max-width: 1024px) {
+  .col-3, .col-4, .col-6 {
+    width: 100%;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 8vmin;
+  }
 }

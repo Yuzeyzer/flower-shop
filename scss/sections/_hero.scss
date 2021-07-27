@@ -80,3 +80,48 @@
 		text-decoration: none;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.hero {
+		&__content {
+			padding-top: vmin(110);
+			max-width: 100%;
+		}
+		&__anchor {
+			@include font(vmin(14), 700, vmin(30));
+			padding: vmin(15) vmin(30);
+			box-shadow: 0px vmin(10) vmin(30) rgba(54, 61, 77, 0.25);
+			border-radius: vmin(30);
+		}
+		&__link {
+			@include font(vmin(10), 800, 1.5);
+			border-radius: vmin(30);
+			padding: vmin(5) vmin(16);
+		}
+		&__title {
+			@include font(vmin(42), 400, 1.5);
+			margin: vmin(40) 0 vmin(40);
+		}
+		&-list {
+			margin-bottom: vmin(50);
+			&__item {
+				@include font(vmin(12), 700, vmin(26));
+				margin-right: vmin(15);
+				&::after {
+					right: vmin(-11);
+				}
+			}
+		}
+		&-info {
+			flex-direction: column;
+			&__item {
+				@include font(vmin(13), 700, vmin(25));
+				margin-bottom: vmin(20);
+				img {
+					margin-right: vmin(20);
+					width: vmin(17);
+				}
+			}
+		}
+	}
+}
