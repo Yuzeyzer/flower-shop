@@ -22,6 +22,12 @@
 		@include font(vw(64), 400, vh(90));
 		margin: vh(67) 0 vh(68);
 		color: $text-white;
+		@media screen and (max-width: 1024px) {
+			& {
+				@include font(vmin(64), 400, vmin(90));
+				margin: vmin(67) 0 vmin(68);
+			}
+		}
 	}
 	&-list {
 		display: flex;
@@ -78,5 +84,25 @@
 		box-shadow: 0px vh(10) vh(30) rgba(54, 61, 77, 0.25);
 		border-radius: vh(30);
 		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.hero {
+		&__content {
+			padding-top: vmin(110);
+			max-width: 100%;
+		}
+		&__anchor {
+			@include font(vmin(14), 700, vmin(30));
+			padding: vmin(15) vmin(30);
+			box-shadow: 0px vmin(10) vmin(30) rgba(54, 61, 77, 0.25);
+			border-radius: vmin(30);
+		}
+		&__link {
+			@include font(vmin(12), 800, vmin(20));
+			border-radius: vmin(30);
+			padding: vmin(5) vmin(16);
+		}
 	}
 }

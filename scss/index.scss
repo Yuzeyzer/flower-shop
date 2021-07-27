@@ -120,3 +120,12 @@ hr {
     margin: 0;
     border-color: #EDEFF2;
 }
+
+@media screen and (max-width:1024px) {
+    .col-3,.col-4,.col-6 {
+        width: 100%;
+    }
+    .container {
+        max-width: 100%;
+    }
+}

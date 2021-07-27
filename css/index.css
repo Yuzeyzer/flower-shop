@@ -168,6 +168,17 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero__title {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.06667vmin;
+    line-height: 24vmin;
+    margin: 17.86667vmin 0 18.13333vmin;
+  }
+}
+
 .hero-list {
   display: flex;
   justify-content: center;
@@ -241,6 +252,32 @@
   box-shadow: 0px 0.97656vh 2.92969vh rgba(54, 61, 77, 0.25);
   border-radius: 2.92969vh;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hero__content {
+    padding-top: 29.33333vmin;
+    max-width: 100%;
+  }
+  .hero__anchor {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.73333vmin;
+    line-height: 8vmin;
+    padding: 4vmin 8vmin;
+    box-shadow: 0px 2.66667vmin 8vmin rgba(54, 61, 77, 0.25);
+    border-radius: 8vmin;
+  }
+  .hero__link {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2vmin;
+    line-height: 5.33333vmin;
+    border-radius: 8vmin;
+    padding: 1.33333vmin 4.26667vmin;
+  }
 }
 
 .about {
@@ -864,4 +901,13 @@ img {
 hr {
   margin: 0;
   border-color: #EDEFF2;
+}
+
+@media screen and (max-width: 1024px) {
+  .col-3, .col-4, .col-6 {
+    width: 100%;
+  }
+  .container {
+    max-width: 100%;
+  }
 }
