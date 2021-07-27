@@ -514,6 +514,76 @@
   transform: translateX(0.3125vw);
 }
 
+@media screen and (max-width: 1024px) {
+  .service .container {
+    padding: 0;
+  }
+  .service__row:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .service-item.service-item__image {
+    padding: 6.66667vmin;
+    min-height: 93.33333vmin;
+  }
+  .service-item.service-item__image img {
+    object-fit: cover;
+    height: 93.33333vmin;
+    border-radius: 2.66667vmin;
+  }
+  .service-item.service-item__image .play {
+    border-radius: 8vmin;
+    width: 16vmin;
+    height: 16vmin;
+    box-shadow: 0 2.66667vmin 8vmin #e62e7b;
+  }
+  .service-item.service-item__image .play:hover {
+    box-shadow: 0 2.66667vmin 8vmin #ffffff;
+  }
+  .service-item.service-item__image .service-item__subtitle {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.73333vmin;
+    line-height: 6.93333vmin;
+  }
+  .service .next {
+    bottom: 6.66667vmin;
+    right: 6.66667vmin;
+    border-radius: 8vmin;
+    width: 16vmin;
+    height: 16vmin;
+  }
+  .service .next:hover svg {
+    transform: translateX(1.33333vmin);
+  }
+  .service-item {
+    padding: 0;
+  }
+  .service-item__title {
+    margin-top: 0;
+    margin-bottom: 2.66667vmin;
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.6vmin;
+    line-height: 16vmin;
+  }
+  .service-item__link {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.26667vmin;
+    line-height: 8vmin;
+  }
+  .service-item__link svg {
+    margin-left: 6.66667vmin;
+  }
+  .service .pink-btn {
+    display: inline-block;
+    margin-top: 5.33333vmin;
+  }
+}
+
 .catalog {
   text-align: center;
   padding: 7.8125vw 0;
@@ -975,5 +1045,14 @@ hr {
   .container {
     max-width: 100%;
     padding: 0 8vmin;
+  }
+  .pink-btn {
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.2vmin;
+    line-height: 5.33333vmin;
+    padding: 1.33333vmin 4.53333vmin;
+    border-radius: 8vmin;
   }
 }

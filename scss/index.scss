@@ -129,4 +129,9 @@ hr {
         max-width: 100%;
         padding: 0 vmin(30);
     }
+    .pink-btn {
+        @include font(vmin(12), 800, vmin(20));
+        padding: vmin(5) vmin(17);
+        border-radius: vmin(30);
+    }
 }
